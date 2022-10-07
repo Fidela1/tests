@@ -121,8 +121,12 @@ const primeNumber = (x) => {
     }
 }
 console.log(primeNumber(4));
-// function to check greatest number
+// function that reverse string
 
-const checkGreatestNum =(num1,num2) =>{
-
+const reverseString = (s) =>{
+    const splitString = s.split('');
+    const reverseString = splitString.reverse();
+    const joinString = reverseString.join('');
+    return joinString;
 }
+console.log(reverseString("hello"));
