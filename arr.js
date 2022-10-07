@@ -87,3 +87,38 @@ return str2.sort((a,b) => b.length-a.length)[0];
 
 }
 console.log(longer('programming Language'));
+
+// to count vowels
+
+function countVowels(y){
+    let vowelList = 'iuoae';
+    let vCount = 0;
+    for (i=0;i<y.length;i++){
+        if (vowelList.indexOf(y[i]) !== -1){
+        vCount +=1;
+        }
+    }
+    return vCount;
+}
+
+console.log(countVowels("The Quick Brown Fox"));
+
+// to check if number is prime
+
+function primeNumber(x){
+    if(x ===1){
+     return false;
+    }
+    else if(x===2){
+        return true;
+    }
+    else{
+        for (let i=2;i<x;i++){
+            if (x % i === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
+console.log(primeNumber(4));
