@@ -255,7 +255,13 @@ function findSmallest(str){
   console.log(name1);
 
 
-
+// to check if number is even or odd
+const number1 = [1,2,3,4,5,6,7,8];
+const findEven = (even) => {
+return even%2 == 0;
+}
+let bbb = number1.filter(findEven);
+console.log(sss);
 
 
 
